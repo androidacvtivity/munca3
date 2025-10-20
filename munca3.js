@@ -248,6 +248,7 @@
         jQuery('#' + specs.resultF + '-' + (index + 1)).val(toFloat(result)).trigger('change');
     }
 
+    
     function fix_autocalc_fields($element) {
         var resultFieldName = $element.attr('field');
         var rowIndex = $element.attr('row-index');
