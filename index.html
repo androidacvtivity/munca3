@@ -1,0 +1,2780 @@
+<div>
+    @dec_fiscCod1_datefisc;
+    @nalogPeriodLetter;
+</div>
+
+<tbody>
+    <h3 align="center">
+        <strong>
+            MUNCA3
+        </strong>
+    </h3>
+    <h3 align="center">
+        <strong>
+            ["Cercetare statistică anuală"]
+        </strong>
+    </h3>
+    <h3 align="center">
+        <strong>
+            ["M3 ANEXĂ"]
+        </strong>
+    </h3>
+    <h3 align="center">
+        <strong>
+            ["Câștigurile salariale și costul forței de muncă"]
+        </strong>
+    </h3>
+    <p align="center" id="period">
+        în anul @nalogPeriodYear;
+    </p>
+    <h3 class="webform-padding-sm">
+        ["BIROUL NAŢIONAL DE STATISTICĂ"]
+    </h3>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Denumirea"]:
+        </span>
+        @dec_fiscCod_name;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Adresa"]:
+        </span>
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Raionul(municipiul)"]:
+        </span>
+        @dec_fiscCod_fisc;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Satul(comuna)"]:
+        </span>
+        @dec_fiscCod_cuatm;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Strada"]:
+        </span>
+        @dec_fiscCod_street;
+    </p>
+    <div class="webform-padding-sm webform-select2-inline">
+        <span class="webform-bold webform-right-sm">
+            ["Cod CFP"]:
+        </span>
+        @dec_fiscCod_cfp;
+    </div>
+    <div class="webform-padding-sm webform-select2-inline">
+        <span class="webform-bold webform-right-sm">
+            ["Cod CFOJ"]:
+        </span>
+        @dec_fiscCod_cfoj;
+    </div>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Cod CUIÎO"]:
+        </span>
+        @dec_fiscCod_cuio;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Cod IDNO"]:
+        </span>
+        @dec_fiscCod_fiscal;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Codul fiscal"]:
+        </span>
+        @dec_fiscCod_codFiscal;
+    </p>
+    <div class="webform-padding-sm webform-select2-inline">
+        <span class="webform-bold webform-right-sm field-title">
+            ["Cod CAEM"]:
+        </span>
+        @dec_fiscCod_caem;
+    </div>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Codul statistic"]:
+        </span>
+        @dec_fiscCod_statistic;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Conducătorul"]:
+        </span>
+        @dec_director_director;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Executantul"]:
+        </span>
+        @dec_table_row_anexeint;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["Telefon"]:
+        </span>
+        @dec_fiscCod_telefon;
+    </p>
+    <p class="webform-padding-sm">
+        <span class="webform-bold webform-right-sm">
+            ["UAT (Raionul/Municipiul)"]:
+        </span>
+        @dec_fiscCod_uat;
+    </p>
+</tbody>
+
+<p align="center">
+    <strong>
+        ["Cap"]. I.a. ["Numărul salariaților (fără ucenici) și timpul de lucru"]
+    </strong>
+</p>
+
+<div class="big-table-wrapper">
+    <div id="dynamicTable1" grid-min-index="2">
+        <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+        <table class="grid" border="1" cellpadding="0" cellspacing="0" width="1048">
+            <thead>
+                <tr>
+                    <td rowspan="4" width="38">
+                        <p align="center">
+                            <strong>
+                                ["Nr"]. ["rd"].
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="4" width="82">
+                        <p align="center">
+                            <strong>
+                                ["Activități conform CAEM"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="4" width="60">
+                        <p align="center">
+                            <strong>
+                                ["Cod CAEM"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="4" width="95">
+                        <p align="center">
+                            <strong>
+                                ["Categorii de salariați"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="3" width="104">
+                        <p align="center">
+                            <strong>
+                                ["Efectivul salariaților la sfîrșitul anului (inclusiv cei cu contract de muncă
+                                suspendat)"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="4" width="335">
+                        <p align="center">
+                            <strong>
+                                ["Numărul mediu al salariaților (cu o zecimală)"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="2" rowspan="2" width="179">
+                        <p align="center">
+                            <strong>
+                                ["Timpul efectiv lucrat aferent salariaților"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="2" rowspan="2" width="156">
+                        <p align="center">
+                            <strong>
+                                ["Timpul plătit nelucrat aferent salariaților"]
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" width="85">
+                        <p align="center">
+                            <strong>
+                                ["Total salariați"]
+                            </strong>
+                        </p>
+                        <p align="center">
+                            <strong>
+                                ["Total salariați"] (["col"].2 = ["col"].3+["col"].5)
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="3" width="250">
+                        <p align="center">
+                            <strong>
+                                ["din care"]:
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="82">
+                        <p align="center">
+                            <strong>
+                                ["în timp complet"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="79">
+                        <p align="center">
+                            <strong>
+                                ["în timp parțial"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="89">
+                        <p align="center">
+                            <strong>
+                                ["în timp parțial în echivalent timp complet"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="91">
+                        <p align="center">
+                            <strong>
+                                ["în timp complet"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="88">
+                        <p align="center">
+                            <strong>
+                                ["în timp parțial"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="72">
+                        <p align="center">
+                            <strong>
+                                ["în timp complet"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        <p align="center">
+                            <strong>
+                                ["în timp parțial"]
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" width="439">
+                        <p align="center">
+                            <strong>
+                                ["persoane"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="4" width="335">
+                        <p align="center">
+                            <strong>
+                                ["mii ore-om"]
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="38">
+                        <p align="center">
+                            <strong>
+                                ["A"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="82">
+                        <p align="center">
+                            <strong>
+                                ["B"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="60">
+                        <p align="center">
+                            <strong>
+                                ["C"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="95">
+                        <p align="center">
+                            <strong>
+                                ["D"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="104">
+                        <p align="center">
+                            <strong>
+                                1
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                2
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="82">
+                        <p align="center">
+                            <strong>
+                                3
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="79">
+                        <p align="center">
+                            <strong>
+                                4
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="89">
+                        <p align="center">
+                            <strong>
+                                5
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="91">
+                        <p align="center">
+                            <strong>
+                                6
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="88">
+                        <p align="center">
+                            <strong>
+                                7
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="72">
+                        <p align="center">
+                            <strong>
+                                8
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        <p align="center">
+                            <strong>
+                                9
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" width="38">
+                        <p class="static-index">
+                            <strong>
+                                0
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="82">
+                        <p>
+                            <strong>
+                                ["Total unitate"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="60">
+                        <p align="center">
+                            0000
+                        </p>
+                    </td>
+                    <td width="95">
+                        <p>
+                            <strong>
+                                ["Total salariați"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="104">
+                        @dec_dynamicTable1_r0_c1t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable1_r0_c2t;
+                    </td>
+                    <td width="82">
+                        @dec_dynamicTable1_r0_c3t;
+                    </td>
+                    <td width="79">
+                        @dec_dynamicTable1_r0_c4t;
+                    </td>
+                    <td width="89">
+                        @dec_dynamicTable1_r0_c5t;
+                    </td>
+                    <td width="91">
+                        @dec_dynamicTable1_r0_c6t;
+                    </td>
+                    <td width="88">
+                        @dec_dynamicTable1_r0_c7t;
+                    </td>
+                    <td width="72">
+                        @dec_dynamicTable1_r0_c8t;
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable1_r0_c9t;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="95">
+                        <p>
+                            <strong>
+                                ["Femei"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="104">
+                        @dec_dynamicTable1_r0_c1f;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable1_r0_c2f;
+                    </td>
+                    <td width="82">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="79">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="89">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="91">
+                        @dec_dynamicTable1_r0_c6f;
+                    </td>
+                    <td width="88">
+                        @dec_dynamicTable1_r0_c7f;
+                    </td>
+                    <td width="72">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="84">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" width="38">
+                        <p class="static-index">
+                            <strong>
+                                1
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="82">
+                        <p>
+                            <strong>
+                                ["Activitatea"]
+                            </strong>
+                        </p>
+                        <p>
+                            <strong>
+                                ["principală"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="60">
+                        @dec_dynamicTable1_r1_cc;
+                    </td>
+                    <td width="95">
+                        <p>
+                            <strong>
+                                ["Total salariați"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="104">
+                        @dec_dynamicTable1_r1_c1t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable1_r1_c2t;
+                    </td>
+                    <td width="82">
+                        @dec_dynamicTable1_r1_c3t;
+                    </td>
+                    <td width="79">
+                        @dec_dynamicTable1_r1_c4t;
+                    </td>
+                    <td width="89">
+                        @dec_dynamicTable1_r1_c5t;
+                    </td>
+                    <td width="91">
+                        @dec_dynamicTable1_r1_c6t;
+                    </td>
+                    <td width="88">
+                        @dec_dynamicTable1_r1_c7t;
+                    </td>
+                    <td width="72">
+                        @dec_dynamicTable1_r1_c8t;
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable1_r1_c9t;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="95">
+                        <p>
+                            <strong>
+                                ["Femei"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="104">
+                        @dec_dynamicTable1_r1_c1f;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable1_r1_c2f;
+                    </td>
+                    <td width="82">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="79">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="89">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="91">
+                        @dec_dynamicTable1_r1_c6f;
+                    </td>
+                    <td width="88">
+                        @dec_dynamicTable1_r1_c7f;
+                    </td>
+                    <td width="72">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                    <td width="84">
+                        <p align="center">
+                            Х
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+            <tbody class="drow">
+                <tr>
+                    <td rowspan="2" class="static-index">
+                        @dec_dynamicTable1_row_ind;
+                    </td>
+                    <td rowspan="2">
+                        <p>
+                            <strong>
+                                ["Activitatea"]
+                            </strong>
+                        </p>
+                        <p>
+                            @dec_dynamicTable1_row_cb;
+                        </p>
+                    </td>
+                    <td rowspan="2">
+                        @dec_dynamicTable1_row_cc;
+                    </td>
+                    <td>
+                        <strong>
+                            ["Total salariați"]
+                        </strong>
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c1t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c2t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c3t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c4t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c5t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c6t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c7t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c8t;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c9t;
+                    </td>
+                    <td rowspan="2" width="20px" class="delrow"><a href="#">Şterge</a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>
+                            ["Femei"]
+                        </strong>
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c1f;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c2f;
+                    </td>
+                    <td>
+                        <p>Х</p>
+                    </td>
+                    <td>
+                        <p>Х</p>
+                    </td>
+                    <td>
+                        <p>Х</p>
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c6f;
+                    </td>
+                    <td>
+                        @dec_dynamicTable1_row_c7f;
+                    </td>
+                    <td>
+                        <p>X</p>
+                    </td>
+                    <td>
+                        <p>X</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br>
+
+<div id="dynamicSection" default-row-count="0">
+    <a href="#" class="grid-addrow grid-add-region">["Adaugă raion"]</a>
+
+    <div class="clearfix"></div>
+    <div class="drow dynamic-section-row">
+        <div class="dynamic-section-index-wrapper webform-right-sm">
+            <label>№</label>
+            @dec_dynamicSection_row_index;
+        </div>
+        <div class="dynamic-section-cuatm webform-right-sm">
+            <label>["Cod CUATM"]</label>
+            @dec_dynamicSection_row_cuatm;
+        </div>
+        <div class="dynamic-section-region webform-right-sm">
+            <label>["Region"]</label>
+            @dec_dynamicSection_row_region;
+        </div>
+        <div class="delrow dynamic-section-dellrow">
+            <a href="#">Elimina raion</a>
+        </div>
+        <div class="clearfix"></div>
+        <div class="big-table-wrapper">
+            <div id="dynSectDynTable1" grid-min-index="2" class="dynamicsection-dynamictable1-wrapper">
+                <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+                <table class="grid" border="1" cellpadding="0" cellspacing="0" width="1048">
+                    <thead>
+                        <tr>
+                            <td rowspan="4" width="38">
+                                <p align="center">
+                                    <strong>
+                                        ["Nr"]. ["rd"].
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="4" width="82">
+                                <p align="center">
+                                    <strong>
+                                        ["Activități conform CAEM"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="4" width="60">
+                                <p align="center">
+                                    <strong>
+                                        ["Cod CAEM"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="4" width="95">
+                                <p align="center">
+                                    <strong>
+                                        ["Categorii de salariați"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="3" width="104">
+                                <p align="center">
+                                    <strong>
+                                        ["Efectivul salariaților la sfîrșitul anului (inclusiv cei cu contract de muncă
+                                        suspendat)"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="4" width="335">
+                                <p align="center">
+                                    <strong>
+                                        ["Numărul mediu al salariaților (cu o zecimală)"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="2" rowspan="2" width="179">
+                                <p align="center">
+                                    <strong>
+                                        ["Timpul efectiv lucrat aferent salariaților"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="2" rowspan="2" width="156">
+                                <p align="center">
+                                    <strong>
+                                        ["Timpul plătit nelucrat aferent salariaților"]
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" width="85">
+                                <p align="center">
+                                    <strong>
+                                        ["Total salariați"]
+                                    </strong>
+                                </p>
+                                <p align="center">
+                                    <strong>
+                                        ["Total salariați"] (["col"].2 = ["col"].3+["col"].5)
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="3" width="250">
+                                <p align="center">
+                                    <strong>
+                                        ["din care"]:
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="82">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp complet"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="79">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp parțial"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="89">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp parțial în echivalent timp complet"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="91">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp complet"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="88">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp parțial"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp complet"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                <p align="center">
+                                    <strong>
+                                        ["în timp parțial"]
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" width="439">
+                                <p align="center">
+                                    <strong>
+                                        ["persoane"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="4" width="335">
+                                <p align="center">
+                                    <strong>
+                                        ["mii ore-om"]
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="38">
+                                <p align="center">
+                                    <strong>
+                                        ["A"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="82">
+                                <p align="center">
+                                    <strong>
+                                        ["B"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="60">
+                                <p align="center">
+                                    <strong>
+                                        ["C"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="95">
+                                <p align="center">
+                                    <strong>
+                                        ["D"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="104">
+                                <p align="center">
+                                    <strong>
+                                        1
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        2
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="82">
+                                <p align="center">
+                                    <strong>
+                                        3
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="79">
+                                <p align="center">
+                                    <strong>
+                                        4
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="89">
+                                <p align="center">
+                                    <strong>
+                                        5
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="91">
+                                <p align="center">
+                                    <strong>
+                                        6
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="88">
+                                <p align="center">
+                                    <strong>
+                                        7
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="72">
+                                <p align="center">
+                                    <strong>
+                                        8
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                <p align="center">
+                                    <strong>
+                                        9
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" width="38">
+                                <p class="static-index">
+                                    <strong>0</strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="82">
+                                <p>
+                                    <strong>
+                                        ["Total unitate"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="60">
+                                <p align="center">
+                                    0000
+                                </p>
+                            </td>
+                            <td width="95">
+                                <p>
+                                    <strong>
+                                        ["Total salariați"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="104">
+                                @dec_dynamicSection_row_r0c1t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection_row_r0c2t;
+                            </td>
+                            <td width="82">
+                                @dec_dynamicSection_row_r0c3t;
+                            </td>
+                            <td width="79">
+                                @dec_dynamicSection_row_r0c4t;
+                            </td>
+                            <td width="89">
+                                @dec_dynamicSection_row_r0c5t;
+                            </td>
+                            <td width="91">
+                                @dec_dynamicSection_row_r0c6t;
+                            </td>
+                            <td width="88">
+                                @dec_dynamicSection_row_r0c7t;
+                            </td>
+                            <td width="72">
+                                @dec_dynamicSection_row_r0c8t;
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection_row_r0c9t;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="95">
+                                <p>
+                                    <strong>
+                                        ["Femei"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="104">
+                                @dec_dynamicSection_row_r0c1f;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection_row_r0c2f;
+                            </td>
+                            <td width="82">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="79">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="89">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="91">
+                                @dec_dynamicSection_row_r0c6f;
+                            </td>
+                            <td width="88">
+                                @dec_dynamicSection_row_r0c7f;
+                            </td>
+                            <td width="72">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="84">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" width="38">
+                                <p class="static-index">
+                                    <strong>
+                                        1
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="82">
+                                <p>
+                                    <strong>
+                                        ["Activitatea"]
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        ["principală"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="60">
+                                @dec_dynamicSection_row_r1cc;
+                            </td>
+                            <td width="95">
+                                <p>
+                                    <strong>
+                                        ["Total salariați"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="104">
+                                @dec_dynamicSection_row_r1c1t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection_row_r1c2t;
+                            </td>
+                            <td width="82">
+                                @dec_dynamicSection_row_r1c3t;
+                            </td>
+                            <td width="79">
+                                @dec_dynamicSection_row_r1c4t;
+                            </td>
+                            <td width="89">
+                                @dec_dynamicSection_row_r1c5t;
+                            </td>
+                            <td width="91">
+                                @dec_dynamicSection_row_r1c6t;
+                            </td>
+                            <td width="88">
+                                @dec_dynamicSection_row_r1c7t;
+                            </td>
+                            <td width="72">
+                                @dec_dynamicSection_row_r1c8t;
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection_row_r1c9t;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="95">
+                                <p>
+                                    <strong>
+                                        ["Femei"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="104">
+                                @dec_dynamicSection_row_r1c1f;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection_row_r1c2f;
+                            </td>
+                            <td width="82">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="79">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="89">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="91">
+                                @dec_dynamicSection_row_r1c6f;
+                            </td>
+                            <td width="88">
+                                @dec_dynamicSection_row_r1c7f;
+                            </td>
+                            <td width="72">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                            <td width="84">
+                                <p align="center">
+                                    Х
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="drow">
+                        <tr>
+                            <td rowspan="2">
+                                @dec_dynamicSection_row_dynSectDynTable1_row_ind;
+                            </td>
+                            <td rowspan="2">
+                                <p>
+                                    <strong>
+                                        ["Activitatea"]
+                                    </strong>
+                                </p>
+                                <p>
+                                    @dec_dynamicSection_row_dynSectDynTable1_row_cb;
+                                </p>
+                            </td>
+                            <td rowspan="2">
+                                @dec_dynamicSection_row_dynSectDynTable1_row_cc;
+                            </td>
+                            <td>
+                                <strong>
+                                    ["Total salariați"]
+                                </strong>
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c1t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c2t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c3t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c4t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c5t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c6t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c7t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c8t;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c9t;
+                            </td>
+                            <td rowspan="2" width="20px" class="delrow"><a href="#">Şterge</a></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>
+                                    ["Femei"]
+                                </strong>
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c1f;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c2f;
+                            </td>
+                            <td>
+                                <p>Х</p>
+                            </td>
+                            <td>
+                                <p>Х</p>
+                            </td>
+                            <td>
+                                <p>Х</p>
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c6f;
+                            </td>
+                            <td>
+                                @dec_dynamicSection_row_dynSectDynTable1_row_c7f;
+                            </td>
+                            <td>
+                                <p>X</p>
+                            </td>
+                            <td>
+                                <p>X</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<p align="center">
+    <strong>
+        ["Cap"]. II. ["Sume brute calculate (fără ucenici)"]
+    </strong>
+</p>
+
+<br clear="all" />
+<div class="big-table-wrapper">
+    <div id="dynamicTable2" grid-min-index="2">
+        <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+        <table class="grid" border="1" cellpadding="0" cellspacing="0" width="1048">
+            <thead>
+                <tr>
+                    <td rowspan="3" width="38">
+                        <p align="center">
+                            <strong>
+                                ["Nr"]. ["rd"].
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="3" width="79">
+                        <p align="center">
+                            <strong>
+                                ["Activități conform CAEM"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="3" width="59">
+                        <p align="center">
+                            <strong>
+                                ["Cod CAEM"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="3" width="89">
+                        <p align="center">
+                            <strong>
+                                ["Categorii de salariaţi"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="84">
+                        <p align="center">
+                            <strong>
+                                ["Sume brute calculate, total"] (["col"].1 = ["col"].2 + ["col"].4 + ["col"].5)
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="4" width="340">
+                        <p align="center">
+                            <strong>
+                                ["din care"]:
+                            </strong>
+                        </p>
+                    </td>
+                    <td colspan="2" width="161">
+                        <p align="center">
+                            <strong>
+                                ["Contribuția/prima individuală obligatorie a salariaților"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="76">
+                        <p align="center">
+                            <strong>
+                                ["Suma impozitului pe venit reținut"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="98">
+                        <p align="center">
+                            <strong>
+                                ["Sume calculate salariaților din bugetul
+                                asigurărilor sociale de stat"]
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                ["Sume calculate pentru timpul lucrat"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                <u>
+                                    ["din care"]:
+                                </u>
+                            </strong>
+                        </p>
+                        <p align="center">
+                            <strong>
+                                ["premii plătite neregulat, ocazional"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                ["Sume calculate pentru timpul nelucrat"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                ["Drepturi în natură"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                ["asigurările sociale de stat"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="76">
+                        <p align="center">
+                            <strong>
+                                ["asigurările de asistență medicală"]
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="9" width="759">
+                        <p align="center">
+                            <strong>
+                                ["mii lei"]
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="38">
+                        <p align="center">
+                            <strong>
+                                ["A"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="79">
+                        <p align="center">
+                            <strong>
+                                ["B"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="59">
+                        <p align="center">
+                            <strong>
+                                ["C"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="89">
+                        <p align="center">
+                            <strong>
+                                ["D"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        <p align="center">
+                            <strong>
+                                1
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                2
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                3
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                4
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                5
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            <strong>
+                                6
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="76">
+                        <p align="center">
+                            <strong>
+                                7
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="76">
+                        <p align="center">
+                            <strong>
+                                8
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="98">
+                        <p align="center">
+                            <strong>
+                                9
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2" width="38">
+                        <p align="center" class="static-index">
+                            <strong>
+                                0
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="79">
+                        <p>
+                            <strong>
+                                ["Total unitate"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="59">
+                        <p align="center">
+                            0000
+                        </p>
+                    </td>
+                    <td width="89">
+                        <p>
+                            <strong>
+                                ["Total salariați"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable2_r0_c1t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r0_c2t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r0_c3t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r0_c4t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r0_c5t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r0_c6t;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r0_c7t;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r0_c8t;
+                    </td>
+                    <td width="98">
+                        @dec_dynamicTable2_r0_c9t;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="89">
+                        <p>
+                            <strong>
+                                ["Femei"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable2_r0_c1f;
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r0_c6f;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r0_c7f;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r0_c8f;
+                    </td>
+                    <td width="98">
+                        @dec_dynamicTable2_r0_c9f;
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2" width="38">
+                        <p align="center" class="static-index">
+                            <strong>
+                                1
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="79">
+                        <p>
+                            <strong>
+                                ["Activitatea"]
+                            </strong>
+                        </p>
+                        <p>
+                            <strong>
+                                ["principală"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="59">
+                        @dec_dynamicTable2_r1_cc;
+                    </td>
+                    <td width="89">
+                        <p>
+                            <strong>
+                                ["Total salariaţi"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable2_r1_c1t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r1_c2t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r1_c3t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r1_c4t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r1_c5t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r1_c6t;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r1_c7t;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r1_c8t;
+                    </td>
+                    <td width="98">
+                        @dec_dynamicTable2_r1_c9t;
+                    </td>
+                </tr>
+                <tr>
+                    <td width="89">
+                        <p>
+                            <strong>
+                                ["Femei"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable2_r1_c1f;
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_r1_c6f;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r1_c7f;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_r1_c8f;
+                    </td>
+                    <td width="98">
+                        @dec_dynamicTable2_r1_c9f;
+                    </td>
+                </tr>
+            </tbody>
+            <tbody class="drow">
+                <tr>
+                    <td rowspan="2" width="38">
+                        <p align="center" class="static-index">
+                            <strong>
+                                @dec_dynamicTable2_row_ind;
+                            </strong>
+                        </p>
+                    </td>
+                    <td rowspan="2" width="79">
+                        <p>
+                            <strong>
+                                ["Activitatea"]
+                            </strong>
+                        </p>
+                        <p>
+                            @dec_dynamicTable2_row_cb;
+                        </p>
+                    </td>
+                    <td rowspan="2" width="59">
+                        @dec_dynamicTable2_row_cc;
+                    </td>
+                    <td width="89">
+                        <p>
+                            <strong>
+                                ["Total salariaţi"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable2_row_c1t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_row_c2t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_row_c3t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_row_c4t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_row_c5t;
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_row_c6t;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_row_c7t;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_row_c8t;
+                    </td>
+                    <td width="98">
+                        @dec_dynamicTable2_row_c9t;
+                    </td>
+                    <td width="20px" class="delrow" rowspan="2"><a href="#">Şterge</a></td>
+                </tr>
+                <tr>
+                    <td width="89">
+                        <p>
+                            <strong>
+                                ["Femei"]
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="84">
+                        @dec_dynamicTable2_row_c1f;
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        <p align="center">
+                            X
+                        </p>
+                    </td>
+                    <td width="85">
+                        @dec_dynamicTable2_row_c6f;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_row_c7f;
+                    </td>
+                    <td width="76">
+                        @dec_dynamicTable2_row_c8f;
+                    </td>
+                    <td width="98">
+                        @dec_dynamicTable2_row_c9f;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br clear="all" />
+<br><br>
+
+<div id="dynamicSection2" default-row-count="0">
+    <a href="#" class="grid-addrow grid-add-region">["Adaugă raion"]</a>
+
+    <div class="clearfix"></div>
+    <div class="drow dynamic-section-row">
+        <div class="dynamic-section-index-wrapper webform-right-sm">
+            <label>№</label>
+            @dec_dynamicSection2_row_index;
+        </div>
+        <div class="dynamic-section-cuatm webform-right-sm">
+            <label>["Cod CUATM"]</label>
+            @dec_dynamicSection2_row_cuatm;
+        </div>
+        <div class="dynamic-section-region webform-right-sm">
+            <label>["Region"]</label>
+            @dec_dynamicSection2_row_region;
+        </div>
+        <div class="delrow dynamic-section-dellrow">
+            <a href="#">Elimina raion</a>
+        </div>
+        <div class="clearfix"></div>
+        <div class="big-table-wrapper">
+            <div id="dynSectDynTable2" grid-min-index="2" class="dynamicsection-dynamictable1-wrapper">
+                <a href="#" class="grid-addrow">["Adaugă rînd"]</a>
+                <table class="grid" border="1" cellpadding="0" cellspacing="0" width="1048">
+                    <thead>
+                        <tr>
+                            <td rowspan="3" width="38">
+                                <p align="center">
+                                    <strong>
+                                        ["Nr"]. ["rd"].
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="3" width="79">
+                                <p align="center">
+                                    <strong>
+                                        ["Activități conform CAEM"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="3" width="59">
+                                <p align="center">
+                                    <strong>
+                                        ["Cod CAEM"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="3" width="89">
+                                <p align="center">
+                                    <strong>
+                                        ["Categorii de salariaţi"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="84">
+                                <p align="center">
+                                    <strong>
+                                        ["Sume brute calculate, total"] (["col"].1 = ["col"].2 + ["col"].4 + ["col"].5)
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="4" width="340">
+                                <p align="center">
+                                    <strong>
+                                        ["din care"]:
+                                    </strong>
+                                </p>
+                            </td>
+                            <td colspan="2" width="161">
+                                <p align="center">
+                                    <strong>
+                                        ["Contribuția/prima individuală obligatorie a salariaților"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="76">
+                                <p align="center">
+                                    <strong>
+                                        ["Suma impozitului pe venit reținut"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="98">
+                                <p align="center">
+                                    <strong>
+                                        ["Sume calculate salariaților din bugetul
+                                        asigurărilor sociale de stat"]
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        ["Sume calculate pentru timpul lucrat"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        <u>
+                                            ["din care"]:
+                                        </u>
+                                    </strong>
+                                </p>
+                                <p align="center">
+                                    <strong>
+                                        ["premii plătite neregulat, ocazional"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        ["Sume calculate pentru timpul nelucrat"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        ["Drepturi în natură"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        ["asigurările sociale de stat"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="76">
+                                <p align="center">
+                                    <strong>
+                                        ["asigurările de asistență medicală"]
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="9" width="759">
+                                <p align="center">
+                                    <strong>
+                                        ["mii lei"]
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="38">
+                                <p align="center">
+                                    <strong>
+                                        ["A"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="79">
+                                <p align="center">
+                                    <strong>
+                                        ["B"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="59">
+                                <p align="center">
+                                    <strong>
+                                        ["C"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="89">
+                                <p align="center">
+                                    <strong>
+                                        ["D"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                <p align="center">
+                                    <strong>
+                                        1
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        2
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        3
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        4
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        5
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    <strong>
+                                        6
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="76">
+                                <p align="center">
+                                    <strong>
+                                        7
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="76">
+                                <p align="center">
+                                    <strong>
+                                        8
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="98">
+                                <p align="center">
+                                    <strong>
+                                        9
+                                    </strong>
+                                </p>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" width="38">
+                                <p align="center" class="static-index">
+                                    <strong>
+                                        0
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="79">
+                                <p>
+                                    <strong>
+                                        ["Total unitate"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="59">
+                                <p align="center">
+                                    0000
+                                </p>
+                            </td>
+                            <td width="89">
+                                <p>
+                                    <strong>
+                                        ["Total salariați"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection2_row_r0c1t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r0c2t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r0c3t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r0c4t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r0c5t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r0c6t;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r0c7t;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r0c8t;
+                            </td>
+                            <td width="98">
+                                @dec_dynamicSection2_row_r0c9t;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="89">
+                                <p>
+                                    <strong>
+                                        ["Femei"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection2_row_r0c1f;
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r0c6f;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r0c7f;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r0c8f;
+                            </td>
+                            <td width="98">
+                                @dec_dynamicSection2_row_r0c9f;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" width="38">
+                                <p align="center" class="static-index">
+                                    <strong>
+                                        1
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="79">
+                                <p>
+                                    <strong>
+                                        ["Activitatea"]
+                                    </strong>
+                                </p>
+                                <p>
+                                    <strong>
+                                        ["principală"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="59">
+                                @dec_dynamicSection2_row_r1cc;
+                            </td>
+                            <td width="89">
+                                <p>
+                                    <strong>
+                                        ["Total salariaţi"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection2_row_r1c1t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r1c2t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r1c3t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r1c4t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r1c5t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r1c6t;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r1c7t;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r1c8t;
+                            </td>
+                            <td width="98">
+                                @dec_dynamicSection2_row_r1c9t;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="89">
+                                <p>
+                                    <strong>
+                                        ["Femei"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection2_row_r1c1f;
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_r1c6f;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r1c7f;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_r1c8f;
+                            </td>
+                            <td width="98">
+                                @dec_dynamicSection2_row_r1c9f;
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tbody class="drow">
+                        <tr>
+                            <td rowspan="2" width="38">
+                                <p align="center">
+                                    <strong>
+                                        @dec_dynamicSection2_row_dynSectDynTable2_row_ind;
+                                    </strong>
+                                </p>
+                            </td>
+                            <td rowspan="2" width="79">
+                                <p>
+                                    <strong>
+                                        ["Activitatea"]
+                                    </strong>
+                                </p>
+                                <p>
+                                    @dec_dynamicSection2_row_dynSectDynTable2_row_cb;
+                                </p>
+                            </td>
+                            <td rowspan="2" width="59">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_cc;
+                            </td>
+                            <td width="89">
+                                <p>
+                                    <strong>
+                                        ["Total salariaţi"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c1t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c2t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c3t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c4t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c5t;
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c6t;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c7t;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c8t;
+                            </td>
+                            <td width="98">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c9t;
+                            </td>
+                            <td width="20px" class="delrow" rowspan="2"><a href="#">Şterge</a></td>
+                        </tr>
+                        <tr>
+                            <td width="89">
+                                <p>
+                                    <strong>
+                                        ["Femei"]
+                                    </strong>
+                                </p>
+                            </td>
+                            <td width="84">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c1f;
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                <p align="center">
+                                    X
+                                </p>
+                            </td>
+                            <td width="85">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c6f;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c7f;
+                            </td>
+                            <td width="76">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c8f;
+                            </td>
+                            <td width="98">
+                                @dec_dynamicSection2_row_dynSectDynTable2_row_c9f;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<p align="center">
+    <strong>
+        ["Cap"]. III. ["Alte categorii de"]
+    </strong>
+    ["persoane necuprinse în Cap. I.a şi Cap. II"]
+</p>
+<div class="big-table-wrapper">
+    <table border="1" cellpadding="0" cellspacing="0" width="1024">
+        <tr>
+            <td rowspan="2">
+                <p align="center">
+                    <strong>
+                        ["Nr"]. ["rd"].
+                    </strong>
+                </p>
+            </td>
+            <td rowspan="2">
+                <p align="center">
+                    <strong>
+                        ["Categorii de persoane ocupate"]
+                    </strong>
+                </p>
+            </td>
+            <td colspan="2">
+                <p align="center">
+                    <strong>
+                        ["Numărul mediu, persoane"]
+                    </strong>
+                </p>
+            </td>
+            <td rowspan="2">
+                <p align="center">
+                    <strong>
+                        ["Sume brute calculate, mii lei"]
+                    </strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">
+                    <strong>
+                        ["total"]
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    <strong>
+                        ["din care femei"]
+                    </strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">
+                    <strong>
+                        A
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    <strong>
+                        B
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    <strong>
+                        1
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    <strong>
+                        2
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <p align="center">
+                    <strong>
+                        3
+                    </strong>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="38">
+                <p align="center">
+                    <strong>
+                        1
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <strong>
+                    ["Ucenicii"]
+                </strong>
+            </td>
+            <td>
+                @dec_table3_row_r1c1;
+            </td>
+            <td>
+                @dec_table3_row_r1c2;
+            </td>
+            <td>
+                @dec_table3_row_r1c3;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">
+                    <strong>
+                        2
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <strong>
+                    ["Persoane detașate în străinătate"]
+                </strong>
+            </td>
+            <td>
+                @dec_table3_row_r2c1;
+            </td>
+            <td>
+                @dec_table3_row_r2c2;
+            </td>
+            <td>
+                @dec_table3_row_r2c3;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">
+                    <strong>
+                        3
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <strong>
+                    ["Membrii consiliilor de administrație, membrii consiliilor municipale/raionale și locale"]
+                </strong>
+            </td>
+            <td>
+                @dec_table3_row_r3c1;
+            </td>
+            <td>
+                @dec_table3_row_r3c2;
+            </td>
+            <td>
+                @dec_table3_row_r3c3;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p align="center">
+                    <strong>
+                        4
+                    </strong>
+                </p>
+            </td>
+            <td>
+                <strong>
+                    ["Persoane care execută lucrări/prestează servicii unității în baza contractelor de drept civil"]
+                </strong>
+            </td>
+            <td>
+                @dec_table3_row_r4c1;
+            </td>
+            <td>
+                @dec_table3_row_r4c2;
+            </td>
+            <td>
+                @dec_table3_row_r4c3;
+            </td>
+        </tr>
+    </table>
+</div>
+
+<br><br>
+
+<p align="center">
+    <strong>
+        ["Cap"]. V. ["Alte cheltuieli cu forța de muncă, efectuate de unitate"]
+    </strong>
+</p>
+<div class="big-table-wrapper">
+    <table border="1" cellpadding="0" cellspacing="0" width="1024">
+        <thead>
+            <tr>
+                <th>
+                    <p align="center">
+                        ["Nr"]. ["rd"].
+                    </p>
+                </th>
+                <td></td>
+                <th>
+                    <p align="center">
+                        ["Sume brute calculate, mii lei"]
+                    </p>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        A
+                    </p>
+                </th>
+                <th>
+                    <p align="center">
+                        B
+                    </p>
+                </th>
+                <th>
+                    <p align="center">
+                        1
+                    </p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th width="38">
+                    <p align="center">
+                        1
+                    </p>
+                </th>
+                <th width="1200">
+                    ["Total cheltuieli"] (rd.2+rd.3+rd.4+rd.5+rd.6)
+                </th>
+                <td>
+                    @dec_table5_row_r1c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        2
+                    </p>
+                </th>
+                <th>
+                    ["Prima de asigurare obligatorie de asistență medicală, plătită de angajator pentru salariați"]
+                </th>
+                <td>
+                    @dec_table5_row_r2c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        3
+                    </p>
+                </th>
+                <th>
+                    ["Contribuția angajatorului pentru asigurările sociale de stat obligatorii ale salariaților"]
+                </th>
+                <td>
+                    @dec_table5_row_r3c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        4
+                    </p>
+                </th>
+                <th>
+                    ["Prestații sociale plătite direct de angajator"]: (rd.4 = rd.4.1+rd.4.2)
+                </th>
+                <td>
+                    @dec_table5_row_r4c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        4.1
+                    </p>
+                </th>
+                <th>
+                    ["Plăți în caz de boală, concediere și situații similare"]
+                </th>
+                <td>
+                    @dec_table5_row_r41c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        4.1.1
+                    </p>
+                </th>
+                <th>
+                    ["din care"]:<br>
+                    ["pentru incapacitate temporară de muncă"]
+                </th>
+                <td>
+                    @dec_table5_row_r411c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        4.2
+                    </p>
+                </th>
+                <th>
+                    ["Alte prestaţii sociale (de exemplu: studii, ajutorul material acordat salariaţilor cu ocazia unor
+                    evenimente familiale)"]
+                </th>
+                <td>
+                    @dec_table5_row_r42c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        5
+                    </p>
+                </th>
+                <th>
+                    ["Cheltuieli pentru formarea profesională a salariaţilor"]
+                </th>
+                <td>
+                    @dec_table5_row_r5c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        6
+                    </p>
+                </th>
+                <th>
+                    ["Alte cheltuieli cu forţa de muncă, total"] (rd.6≥rd.7+rd.8+rd.9+rd.10+rd.11)
+                </th>
+                <td>
+                    @dec_table5_row_r6c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        7
+                    </p>
+                </th>
+                <th>
+                    ["din care"]:<br>
+                    ["Cheltuieli pentru echipamentul individual de protecţie "]
+                </th>
+                <td>
+                    @dec_table5_row_r7c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        8
+                    </p>
+                </th>
+                <th>
+                    ["Cheltuieli cu angajarea de personal"]
+                </th>
+                <td>
+                    @dec_table5_row_r8c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        9
+                    </p>
+                </th>
+                <th>
+                    ["Cheltuieli cu alimentaţie specială/de protecţie"]
+                </th>
+                <td>
+                    @dec_table5_row_r9c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        10
+                    </p>
+                </th>
+                <th>
+                    ["Cheltuieli pentru examenul medical"]
+                </th>
+                <td>
+                    @dec_table5_row_r10c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        11
+                    </p>
+                </th>
+                <th>
+                    ["Cheltuieli pentru materiale igienico-sanitare de protecţie"]
+                </th>
+                <td>
+                    @dec_table5_row_r11c1;
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p align="center">
+                        12
+                    </p>
+                </th>
+                <th>
+                    ["Transferuri de la bugetul de stat către angajator pentru stimularea ocupării forței de muncă"]
+                </th>
+                <td>
+                    @dec_table5_row_r12c1;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
